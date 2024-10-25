@@ -18,7 +18,7 @@ Este projeto utiliza Docker Compose para orquestrar os serviços necessários e 
 2. Execute o Docker Compose para iniciar os serviços.
 
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
    O parâmetro `-d` executa os serviços em segundo plano.
@@ -26,7 +26,7 @@ Este projeto utiliza Docker Compose para orquestrar os serviços necessários e 
 3. Verifique se os serviços estão em execução.
 
    ```bash
-   docker-compose ps
+   docker compose ps
    ```
 
 ## Executando o arquivo main.go
@@ -69,5 +69,5 @@ go mod tidy
 Se você encontrar algum problema, verifique os logs dos serviços com:
 
 ```bash
-docker-compose logs -f
+docker compose logs -f
 ```
